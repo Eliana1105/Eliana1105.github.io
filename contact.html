@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="scrip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    </link>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<nav class="navbar bg-dark navbar-dark p-3 navbar-expand-lg">
+    <div class="container">
+        <a href="" class="navbar-brand">Beauty and Me</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse-navbar-collapse" id="navDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                    <div class="dropdown-menu">
+                        <a href="home.html" style="color:red" class="dropdown-item">Address</a>
+                        <a href="home.html" style="color:aliceblue;" class="dropdown-item">News</a>
+                        <a href="home.html" style="color:aliceblue;" class="dropdown-item">Good</a>
+                    </div>
+                </li> -->
+                
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="container-all">
+        <!-- 左邊
+        <div class="container-left">
+            <nav id="siderbar">
+                <button type="button" id="collapse" class="btn btn-info collapse-btn">
+                    <i class="fa-solid fa-align-left"></i>
+                </button>
+
+                <ul class="list-unstyled">
+                    <p>
+                        beauty and me
+                    </p>
+                    <li>
+                        <a href="#sublist" data-bs-toggle="collapse" id="dropdown">home <i
+                                class="fa-solid fa-house"></i></a>
+                        <ul id="sublist" class="list-unstyled collapse">
+                            <li>
+                                <a href="">name</a>
+                            </li>
+                            <li>
+                                <a href="">name</a>
+                            </li>
+                            <li>
+                                <a href="">name</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">home </a>
+                    </li>
+                    <li>
+                        <a href="">home </a>
+                    </li>
+                    <li>
+                        <a href="">home </a>
+                    </li>
+                    <li>
+                        <a href="">home </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div> -->
+
+        <!-- 右邊 -->
+        <div class="container-right">
+            <!--Section: Contact v.2-->
+            <section class="mb-4">
+
+                <!--Section heading-->
+                <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+                <!--Section description-->
+                <p class="text-center w-responsive mx-auto mb-5">如果您對我們的網站有任何問題或建議，歡迎隨時聯繫我們的客服團隊，我們將竭誠為您服務！</p>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <label for="name" class="">Name</label>
+                                        <input type="text" id="name" name="name" class="form-control">
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <label for="email" class="">Email</label>
+                                        <input type="text" id="email" name="email" class="form-control">
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <label for="message">Message</label>
+                                        <textarea type="text" id="message" name="message" rows="2"
+                                            class="form-control md-textarea"></textarea>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                        </form>
+                        <a href="#" class="btn btn-primary">送出</a>
+                        <!-- <div class="text-center text-md-left">
+                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div> -->
+                        <div class="status"></div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-3 text-center">
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                <p>台北市松山區xx路xx巷xx號</p>
+                            </li>
+
+                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                <p>(02)8888-8888</p>
+                            </li>
+
+                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                <p>beautyandme@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+            </section>
+            <!--Section: Contact v.2-->
+        </div>
+    </div>
+
+
+
+    <footer class="p-4 border-top">
+        <div class="container align-items-center justify-content-between">
+            <p class="mb-0 text-muted">
+                &copy; 2023 Beauty and Me.
+            </p>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="" class="nav-link text-muted">關於本站</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link text-muted">關於作者</a>
+                </li>
+
+            </ul>
+            <!-- <p class="mb-0 text-muted">
+                如果您對我們的網站有任何問題或建議，歡迎隨時聯繫我們的客服團隊，我們將竭誠為您服務！
+            </p> -->
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
